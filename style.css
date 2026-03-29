@@ -1,0 +1,405 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/geranimo-qzgN45hseN0-unsplash.jpg);
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clockholder {
+    display: flex;
+    justify-content: center;
+}
+#clock {
+    background-color: #ffffff75;
+    border-top: white;
+    border-left: white;
+    border-width: 1px;
+    border-style: outset;
+    max-width: fit-content;
+    padding: 12px;
+    font-size: 12px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.titleHolder {
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+    font-size: 24px;
+}
+#customTitle {
+    text-align: center;
+    border-style: none;
+    font-size: larger;
+    font-style: bold;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+.spacer {
+    height: 120px;
+}
+
+/* nedre moduler */
+
+.modules-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* sex kolumner */
+    gap: 10px; /* mellanrum mellan kolumner/rader */
+    grid-auto-rows: min-content;
+    margin: 24px;
+}
+.firstmodule {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    grid-column: 1;
+    background-color: #ffffff75;
+    border-top: white;
+    border-left: white;
+    border-width: 1px;
+    border-style: outset;
+    min-width: auto;
+    min-height: auto;
+    padding: 16px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.firstmodule h2 {
+    font-weight: 200;
+}
+.linkinput {
+    display: none;
+}
+.linkinput.visible {
+    display: block;
+}
+#addlink {
+    display: block;
+    background: gray;
+    border: none;
+    padding: 10px;
+    width: 132px;
+    height: 48px;
+    margin: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+#addlink.hidden {
+    display: none;
+}
+.linklist {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.favicon {
+    max-width: 32px;
+    max-height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+#firstmoduleitems {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0;
+    margin: 0;
+    gap: 8px;
+    width: 100%;
+}
+
+.listitem {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-color: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.listitem a {
+    flex: 1;
+    margin-left: 8px;
+    text-decoration: none;
+    color: inherit;
+
+    display: block;
+    width: auto;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: left;
+    margin: 2px;
+    font-weight: 600px;
+    list-style: none;
+}
+
+.removelinkbtn {
+    justify-content: right;
+    background: none;
+    border: none;
+    padding: 0;
+    margin-right: 8px;
+
+    font-size: x-small;
+}
+
+/* Andra modulen: */
+
+.secondmodule {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-top: white;
+    border-left: white;
+    border-width: 1px;
+    border-style: outset;
+    grid-column: 2;
+    background-color: #ffffff75;
+    min-width: auto;
+    min-height: auto;
+    padding: 8px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.secondmodule h2 {
+    font-weight: 200;
+}
+
+#weatherplacement {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    justify-content: space-between;
+    padding: 4px;
+    margin: 0;
+    width: 100%;
+    font-size: medium;
+    font-weight: 200;
+    text-align: left;
+    list-style: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.weatherinfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.weatherrow {
+    display: flex;
+}
+
+.weathertitle {
+    display: flex;
+    font-weight: 700;
+    margin: 4px;
+}
+
+.emojimodule {
+    font-size: 12px;
+}
+.temp {
+    font-size: 8px;
+    grid-row: 2;
+    background-color: lightgrey;
+    padding: 10px;
+    margin: 8px;
+    font-weight: bold;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.wind {
+    font-size: 8px;
+    grid-row: 2;
+    background-color: lightgrey;
+    padding: 10px;
+    margin: 8px;
+    font-weight: bold;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.weatherelement {
+    display: flex;
+
+    align-items: flex-start;
+    gap: 12px;
+    width: 100%;
+    margin-bottom: 4px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 12px;
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+/* tredje modulen: */
+
+.thirdmodule {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-top: white;
+    border-left: white;
+    border-width: 1px;
+    border-style: outset;
+    grid-column: 3;
+    background-color: #ffffff75;
+    min-width: auto;
+    min-height: auto;
+    padding: 16px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.thirdmodule h2 {
+    text-align: center;
+    font-weight: 200;
+}
+
+.ztroiddiv {
+    background-color: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.ztroiddiv p {
+    margin: 8px;
+}
+
+.ztroiddiv h2 {
+    text-align: center;
+    font-weight: 200;
+}
+
+/* fjärde modulen: */
+
+.fourthmodule {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    border-top: white;
+    border-left: white;
+    border-width: 1px;
+    border-style: outset;
+    grid-column: 4;
+    background-color: #ffffff75;
+    min-width: auto;
+    min-height: auto;
+
+    padding: 16px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.fourthmodule h2 {
+    text-align: center;
+    font-weight: 200;
+}
+
+#notes-section {
+    height: 100%;
+    border-radius: 10px;
+    width: 100%;
+    flex: 1;
+    resize: none;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    outline-style: none;
+    scrollbar-base-color: white;
+    scrollbar-width: none;
+}
+
+.notes-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: flex-start;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+}
+#randompicgenerator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: fit-content;
+    padding: 12px;
+    font-size: 12px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-style: none;
+    background-color: #ffffff75;
+    border-top: white;
+    border-left: white;
+    border-width: 1px;
+    border-style: outset;
+    color: white;
+}

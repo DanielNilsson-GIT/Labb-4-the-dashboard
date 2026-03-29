@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="sv">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="/script.js" defer></script>
+        <link rel="stylesheet" href="/style.css" />
+        <title>Document</title>
+    </head>
+    <body id="body">
+        <main>
+            <section class="clockholder"><div id="clock"></div></section>
+            <div class="spacer"></div>
+            <header>
+                <section class="titleHolder">
+                    <h1 contenteditable="true" id="customTitle">
+                        John Does dassbräde
+                    </h1>
+                </section>
+            </header>
+
+            <section class="modules-container" id="modulecontainer">
+                <div class="firstmodule">
+                    <h2>Länkar</h2>
+                    <ul id="firstmoduleitems"></ul>
+                    <textarea
+                        name="titleinput"
+                        id="titleinput"
+                        class="linkinput"
+                        placeholder="Ange titel..."
+                    ></textarea>
+                    <textarea
+                        name="linkinput"
+                        id="linkinput"
+                        class="linkinput"
+                        placeholder="Ange länk och tryck sedan enter..."
+                    ></textarea>
+                    <button id="addlink">Lägg till ny länk</button>
+                </div>
+                <div class="secondmodule" id="secondmodule">
+                    <h2>Dagens Väder</h2>
+                    <ul id="weatherplacement"></ul>
+                </div>
+                <div class="thirdmodule" id="thirdmodule">
+                    <h2>Kommande astroider mot jorden</h2>
+                </div>
+                <div class="fourthmodule">
+                    <h2>Anteckningar</h2>
+                    <div class="notes-container">
+                        <textarea name="notes" id="notes-section"></textarea>
+                    </div>
+                </div>
+            </section>
+            <footer class="footer">
+                <button id="randompicgenerator">Generera ny bild</button>
+            </footer>
+        </main>
+    </body>
+</html>
