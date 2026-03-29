@@ -1,0 +1,1 @@
+This is a customizable dashboard as a part of a school project. Please note that in order for the meteor-section to work, you need to remove comment under "runtime" in the bottom of the script. This is due to the demo-key Im using has a very limited amount of uses per day. 
