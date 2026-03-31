@@ -16,19 +16,27 @@ window.addEventListener("DOMContentLoaded", () => {
     displayLinks();
 });
 
-//Övre modul
 const astroidDate = new Date();
+
+//Övre modul
 function displayTime() {
     let currentDate = new Date();
-    const placement = document.getElementById("clock");
-    const clock = document.createElement("div");
-    clock.classList.add("clockholder");
-    clock.id = "clock";
-    clock.innerText = `
-    ${currentDate.toLocaleString("sv-SE")}
-    `;
+    const clockplacement = document.getElementById("clocktime");
+    const dateplacement = document.getElementById("date");
 
-    placement.replaceWith(clock);
+    clockplacement.classList.add("clock");
+    dateplacement.classList.add("date");
+
+    const day = currentDate.getDate();
+    const monthName = currentDate.toLocaleString("sv-SE", { month: "long" });
+    const year = currentDate.getFullYear();
+
+    clockplacement.innerText = `
+    ${currentDate.getHours().toLocaleString("sv-SE") + ":" + currentDate.getMinutes().toLocaleString("sv-SE")}
+    `;
+    dateplacement.innerText = `     
+    ${" "} ${day} ${monthName}- ${year}
+    `;
 }
 
 let textinput = document.getElementById("customTitle");

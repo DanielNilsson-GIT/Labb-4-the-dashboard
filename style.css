@@ -12,7 +12,10 @@ body {
     display: flex;
     justify-content: center;
 }
-#clock {
+.clockbackground {
+    display: flex;
+
+    justify-content: space-between;
     background-color: #ffffff75;
     border-top: white;
     border-left: white;
@@ -26,6 +29,14 @@ body {
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+}
+
+.clock {
+    font-weight: bold;
+    padding-right: 12px;
+}
+.date {
+    padding-left: 12px;
 }
 
 .titleHolder {
