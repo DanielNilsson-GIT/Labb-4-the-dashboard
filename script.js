@@ -343,8 +343,8 @@ function saveInput(userNotes) {
 }
 
 const savedNotes = localStorage.getItem("userNotes");
-notesInputField.addEventListener("keydown", (e) => {
-    if (e.key === "Enter") {
+notesInputField.addEventListener("input", () => {
+    {
         let userNotes = notesInputField.value;
         saveInput(userNotes);
     }
