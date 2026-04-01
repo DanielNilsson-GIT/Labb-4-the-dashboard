@@ -34,7 +34,6 @@ body {
     text-align: center;
     align-content: center;
     line-height: 1;
-    margin-bottom: 8px;
 }
 .date {
     align-items: center;
@@ -42,7 +41,7 @@ body {
     align-content: center;
     line-height: 1;
     font-size: 12px;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
 .titleHolder {

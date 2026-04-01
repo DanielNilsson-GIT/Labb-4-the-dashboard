@@ -24,16 +24,17 @@ function displayTime() {
     const clockplacement = document.getElementById("clocktime");
     const dateplacement = document.getElementById("date");
 
-    clockplacement.classList.add("clock");
+    clockplacement.classList.add("clocktime");
     dateplacement.classList.add("date");
 
     const day = currentDate.getDate();
     const monthName = currentDate.toLocaleString("sv-SE", { month: "long" });
     const year = currentDate.getFullYear();
 
-    clockplacement.innerText = `
-    ${currentDate.getHours().toLocaleString("sv-SE") + ":" + currentDate.getMinutes().toLocaleString("sv-SE")}
-    `;
+    clockplacement.innerText = currentDate.toLocaleTimeString("sv-SE", {
+        hour: "2-digit",
+        minute: "2-digit",
+    });
     dateplacement.innerText = `     
     ${" "} ${day} ${monthName}- ${year}
     `;
